@@ -11,6 +11,8 @@
 
 <body>
   <h1>Inventory Tracker</h1>
+  <button id="toggleTheme">🌙</button>
+  <div id="feedback"></div>
 
   <form id="addItemForm">
     <input type="text" id="itemNameInput" placeholder="Item name" required />
@@ -29,10 +31,10 @@
   </form>
 
   <div id="totalCount">Total Items: 0</div>
-<div class="inventory" id="inventoryList"></div>
-<button id="exportBtn">Export to CSV</button>
-<input type="file" id="importCSV" accept=".csv" />
-<button id="toggleTheme">🌙</button>
+  <div class="inventory" id="inventoryList"></div>
+  <button id="exportBtn">Export to CSV</button>
+  <input type="file" id="importCSV" accept=".csv" />
+
 
   <script src="main.js"></script>
 </body>
