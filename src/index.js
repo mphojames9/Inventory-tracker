@@ -14,3 +14,14 @@ function renderItems(filteredItems = items) {
   }, {});
 
 }
+
+const inc = document.createElement('button');
+inc.textContent = '+';
+inc.className = 'btn inc';
+inc.onclick = () => {
+  items[index].count++;
+  saveToStorage();
+  renderItems();
+};
+
+
