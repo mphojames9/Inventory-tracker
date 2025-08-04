@@ -59,4 +59,8 @@ This web application helps users **manage, search, edit, and export inventory it
 ### 🌗 Theme
 - Click the **🌙/☀️ button** to toggle dark/light mode. Stored persistently.
 
+- ## 🚀 Live Demo
+
+👉 [Click here to view the live app](https://inventory-tracker-r0yw.onrender.com)
+
 ---
