@@ -4,6 +4,7 @@ function saveToStorage() {
   localStorage.setItem('inventory', JSON.stringify(items));
 }
 
+//Implement inventory render function with dynamic DOM creation
 function renderItems(filteredItems = items) {
   inventoryList.innerHTML = '';
   const grouped = filteredItems.reduce((acc, item, index) => {
@@ -11,4 +12,5 @@ function renderItems(filteredItems = items) {
     acc[item.category].push({ ...item, index });
     return acc;
   }, {});
+
 }
