@@ -9,6 +9,23 @@
   </head>
 <body>
   <h1>Inventory Tracker</h1>
+
+  <form id="addItemForm">
+  <input type="text" id="itemNameInput" placeholder="Item name" required />
+  <select id="categoryInput" required>
+    <option value="" disabled selected>Choose category</option>
+    <option value="Food">Food</option>
+    <option value="Tools">Tools</option>
+    <option value="Electronics">Electronics</option>
+    <option value="Other">Other</option>
+  </select>
+  <button type="submit">Add Item</button>
+</form>
+
+<form id="searchForm">
+  <input type="text" id="searchInput" placeholder="Search items..." />
+</form>
+
   <script src="main.js"></script>
 </body>
 </html>
