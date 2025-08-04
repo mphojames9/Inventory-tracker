@@ -1,3 +1,4 @@
+  
   const addItemForm = document.getElementById('addItemForm');
     const itemNameInput = document.getElementById('itemNameInput');
     const categoryInput = document.getElementById('categoryInput');
