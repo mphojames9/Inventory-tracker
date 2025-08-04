@@ -32,3 +32,7 @@ itemDiv.addEventListener('drop', (e) => {
   const targetIndex = +itemDiv.dataset.index;
 });
 
+exportBtn.onclick = () => {
+  let csv = "Item Name,Category,Count\n";
+  items.forEach(i => csv += `${i.name},${i.category},${i.count}\n`);
+};
