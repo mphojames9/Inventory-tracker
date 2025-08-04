@@ -36,3 +36,11 @@ exportBtn.onclick = () => {
   let csv = "Item Name,Category,Count\n";
   items.forEach(i => csv += `${i.name},${i.category},${i.count}\n`);
 };
+
+const theme = localStorage.getItem('theme');
+if (theme === 'dark') document.body.classList.add('dark');
+
+themeBtn.onclick = () => {
+  document.body.classList.toggle('dark');
+  localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+};
