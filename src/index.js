@@ -24,4 +24,11 @@ inc.onclick = () => {
   renderItems();
 };
 
+itemDiv.setAttribute('draggable', 'true');
+itemDiv.dataset.index = index;
+
+itemDiv.addEventListener('dragstart', () => dragSrcIndex = index);
+itemDiv.addEventListener('drop', (e) => {
+  const targetIndex = +itemDiv.dataset.index;
+});
 
